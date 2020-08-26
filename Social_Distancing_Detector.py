@@ -1,7 +1,7 @@
 """
 Created on Tue Aug 18 16:59:08 2020
 
-@author: Prasun
+@author: Venkata Sreeram
 """
 
 from packages import social_distancing_config as config
@@ -35,7 +35,7 @@ ln =net.getLayerNames()
 ln = [ln[i[0]-1]for i in net.getUnconnectedOutLayers()]
 print("[INFO] accesing video stream")
 
-vs =cv2.VideoCapture(0)#r"pedestrian.mp4"if "pedestrian.mp4"else
+vs =cv2.VideoCapture(r"pedestrian.mp4"if "pedestrian.mp4"else 0)#r"pedestrian.mp4"if "pedestrian.mp4"else
 writer =None
 
 while True:
